@@ -1,3 +1,4 @@
+
 # Data Structure Review (in Java) :relaxed:
 
 ### Table of Contents
@@ -11,7 +12,6 @@
 - [LinkedHashSet](#linkedhashset)  
 - [TreeSet](#treeset) 
 - :speak_no_evil: Queue < E >
-- [Priority Queue](#priority-queue)  
 - [Array Deque](#arraydeque)  
 - [LinkedList DeQue](#linkedlist-deque)  
 - :baby:  Map < K, V >
@@ -24,6 +24,7 @@
 - [Heap](#heap)
 - [Min Heap](#min-heap)
 - [Max Heap](#max-heap)
+-  [Priority Queue](#priority-queue)  
 - :angel: Other
 - [String and Char](#string--char)  
 - [Basic Operators](#basic-operators)  
@@ -347,91 +348,7 @@ Output:
 	Ajay
 	Ravi
 	Vijay
-___ 
-### Priority Queue
-[priorityqueue](https://www.javatpoint.com/java-priorityqueue)
-	
-	A PriorityQueue is used when the objects are supposed to be processed based on the priority. 
-	It is known that a queue follows First-In-First-Out algorithm, but sometimes the elements of the queue are 
-	needed to be processed according to the priority, that’s when the PriorityQueue comes into play.
-	
-	1. PriorityQueue doesn’t permit NULL pointers.
-	2. We can’t create PriorityQueue of Objects that are non-comparable
-	3. PriorityQueue are unbound queues.
-	
-Example:
 
-	public static void main(String args[]) 
-    	{ 
-        // Creating empty priority queue 
-        PriorityQueue<String> pQueue = 
-                          new PriorityQueue<String>(); 
-  
-        // Adding items to the pQueue using add() 
-        pQueue.add("C"); 
-        pQueue.add("C++"); 
-        pQueue.add("Java"); 
-        pQueue.add("Python"); 
-  
-        // Printing the most priority element 
-        System.out.println("Head value using peek function:"
-                                           + pQueue.peek()); 
-  
-        // Printing all elements 
-        System.out.println("The queue elements:"); 
-        Iterator itr = pQueue.iterator(); 
-        while (itr.hasNext()) 
-            System.out.println(itr.next()); 
-  
-        // Removing the top priority element (or head) and 
-        // printing the modified pQueue using poll() 
-        pQueue.poll(); 
-        System.out.println("After removing an element" + 
-                           "with poll function:"); 
-        Iterator<String> itr2 = pQueue.iterator(); 
-        while (itr2.hasNext()) 
-            System.out.println(itr2.next()); 
-  
-        // Removing Java using remove() 
-        pQueue.remove("Java"); 
-        System.out.println("after removing Java with" + 
-                           " remove function:"); 
-        Iterator<String> itr3 = pQueue.iterator(); 
-        while (itr3.hasNext()) 
-            System.out.println(itr3.next()); 
-  
-        // Check if an element is present using contains() 
-        boolean b = pQueue.contains("C"); 
-        System.out.println ( "Priority queue contains C " + 
-                             "or not?: " + b); 
-  
-        // Getting objects from the queue using toArray() 
-        // in an array and print the array  
-        Object[] arr = pQueue.toArray(); 
-        System.out.println ( "Value in array: "); 
-        for (int i = 0; i<arr.length; i++) 
-          System.out.println ( "Value: " + arr[i].toString()) ; 
-	}
-	
-Output:
-
-	Head value using peek function:C
-	The queue elements:
-	C
-	C++
-	Java
-	Python
-	After removing an elementwith poll function:
-	C++
-	Python
-	Java
-	after removing Java with remove function:
-	C++
-	Python
-	Priority queue contains C or not?: false
-	Value in array: 
-	Value: C++
-	Value: Python
 
 ___
 ### ArrayDeque
@@ -898,6 +815,32 @@ Operations:
 
 	Insert: Insert a new element at the bottom and then "bubble up" to maintain the heap property.
 	Extract Max: Remove the root element (largest) and replace it with the last element, then "bubble down" to maintain the heap property.
+
+___ 
+### Priority Queue
+[priorityqueue](https://www.javatpoint.com/java-priorityqueue)
+
+	PriorityQueue:
+	- Not a normal FIFO queue
+	- Removes elements by priority, not insertion order
+	- In Java, default is a min heap
+	- peek()/poll() return the smallest element by default
+	- To make a max heap, provide a custom comparator	
+	
+	1. PriorityQueue doesn’t permit NULL pointers.
+	2. We can’t create PriorityQueue of Objects that are non-comparable
+	3. PriorityQueue are unbound queues.
+	
+Example:
+
+	PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+	PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
+	 
+	maxHeap.offer(num);
+	int top = maxHeap.peek();
+	int first = maxHeap.poll();
+
+
 ___ 
 ### String && Char
     String.valueOf(i)
@@ -991,4 +934,3 @@ ___
                     return assignBalls(m, n - 1) + assignBalls(m - n, n);
                 }
             }
-
