@@ -55,7 +55,7 @@ This README focuses on the Java data structures and patterns I use most often in
     
 
 <img src="./javacollections.png" width="800"/>
-----------
+
 
 # Quick Java Cheat Sheet
 
