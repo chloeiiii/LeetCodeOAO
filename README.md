@@ -43,17 +43,18 @@ This README focuses on the Java data structures and patterns I use most often in
         
     -   [TreeMap](#treemap)
         
--   [Common Time Complexities](https://chatgpt.com/g/g-p-69c409e318448191be11a7eb03b7df28/c/69cd850a-daf8-83e8-a32c-1611c64c45e6#common-time-complexities)
+-   [Common Time Complexities](#common-time-complexities)
     
--   [Generics in Java (`<>`)](https://chatgpt.com/g/g-p-69c409e318448191be11a7eb03b7df28/c/69cd850a-daf8-83e8-a32c-1611c64c45e6#generics-in-java-)
+-   [Generics in Java (`<>`)](#generics-in-java)
     
--   [Primitive vs Wrapper Types](https://chatgpt.com/g/g-p-69c409e318448191be11a7eb03b7df28/c/69cd850a-daf8-83e8-a32c-1611c64c45e6#primitive-vs-wrapper-types)
+-   [Primitive vs Wrapper Types](#primitive-vs-wrapper-types)
     
--   [Common LeetCode Patterns](https://chatgpt.com/g/g-p-69c409e318448191be11a7eb03b7df28/c/69cd850a-daf8-83e8-a32c-1611c64c45e6#common-leetcode-patterns)
+-   [Common LeetCode Patterns](#common-leetcode-patterns)
     
--   [Useful Java Syntax for LeetCode](https://chatgpt.com/g/g-p-69c409e318448191be11a7eb03b7df28/c/69cd850a-daf8-83e8-a32c-1611c64c45e6#useful-java-syntax-for-leetcode)
+-   [Useful Java Syntax for LeetCode](#useful-java-syntax-for-leetcode)
     
 
+![Java Collections](./javacollections.png)
 ----------
 
 # Quick Java Cheat Sheet
@@ -857,7 +858,7 @@ Average case:
 
 ----------
 
-# Generics in Java (`<>`)
+# Generics in Java
 
 The part inside `<>` is the type the collection stores.
 
