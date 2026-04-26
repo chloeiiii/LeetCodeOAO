@@ -54,7 +54,7 @@ This README focuses on the Java data structures and patterns I use most often in
 -   [Useful Java Syntax for LeetCode](#useful-java-syntax-for-leetcode)
     
 
-![Java Collections](./javacollections.png)
+<img src="./javacollections.png" width="800"/>
 ----------
 
 # Quick Java Cheat Sheet
