@@ -85,7 +85,7 @@ ___
 ___
 ### Stack
 
-    // last-in-first-out
+    // last-in-first-out (Note Deque with ArrayDeque is usually preferred because it is cleaner and more modern)
     // Stack is a subclass of Vector.
     
     Object push(Object element) : Pushes an element on the top of the stack.
