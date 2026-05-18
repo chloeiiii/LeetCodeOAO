@@ -1096,9 +1096,10 @@ for (int num : nums) {
 
 ```
 
+----------
+
 # Bit Manipulation
 
-* * *
 ### Bit Manipulation
 
 Bit manipulation is useful when a problem involves binary representation, XOR, masks, toggling states, or counting bits.
@@ -1120,9 +1121,9 @@ Key XOR rules:
 a ^ a = 0
 a ^ 0 = a
 a ^ b ^ a = b
+```
+--------------------
 
-
-----------
 
 # Final Notes
 
