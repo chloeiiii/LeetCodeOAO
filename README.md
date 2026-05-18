@@ -52,6 +52,8 @@ This README focuses on the Java data structures and patterns I use most often in
 -   [Common LeetCode Patterns](#common-leetcode-patterns)
     
 -   [Useful Java Syntax for LeetCode](#useful-java-syntax-for-leetcode)
+
+-   [Bit Manipulation](#bit-manipulation)
     
 
 <img src="./javacollections.png" width="800"/>
@@ -1093,6 +1095,32 @@ for (int num : nums) {
 }
 
 ```
+
+# Bit Manipulation
+
+* * *
+### Bit Manipulation
+
+Bit manipulation is useful when a problem involves binary representation, XOR, masks, toggling states, or counting bits.
+
+Common Java bit operators:
+
+| Operator | Meaning | Example |
+|---|---|---|
+| `&` | AND: both bits must be 1 | `5 & 1 = 1` |
+| `\|` | OR: at least one bit is 1 | `5 \| 2 = 7` |
+| `^` | XOR: bits are different | `5 ^ 5 = 0` |
+| `~` | NOT: flip bits | `~num` |
+| `<<` | Left shift | `num << 1` means multiply by 2 |
+| `>>` | Right shift | `num >> 1` means divide by 2 |
+
+Key XOR rules:
+
+```java
+a ^ a = 0
+a ^ 0 = a
+a ^ b ^ a = b
+
 
 ----------
 
